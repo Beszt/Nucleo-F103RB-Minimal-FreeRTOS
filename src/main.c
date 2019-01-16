@@ -15,7 +15,8 @@
 #include "queue.h"
 
 void prvSetupHardware() {
-	SystemCoreClock = 8000000; // 8 mhz clock
+	SystemCoreClock = 64000000; // 64 mhz clock
+	SystemCoreClockUpdate();
 
 	HAL_Init();
 
