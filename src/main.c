@@ -15,7 +15,7 @@
 #include "queue.h"
 
 void prvSetupHardware() {
-	SystemCoreClockUpdate(); //This is need to reload default clock (8 mhz)
+	SystemCoreClockUpdate(); //Need this for update default clock (8 mhz)
 
 	HAL_Init();
 
